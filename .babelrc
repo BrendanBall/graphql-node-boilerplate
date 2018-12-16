@@ -1,9 +1,9 @@
 {
-  "presets": [[ "env", { "targets": { "node": "10.0.0" } } ]],
+  "presets": [[ "@babel/env", { "targets": { "node": "10.0.0" } } ]],
   "plugins": [
-    "transform-object-rest-spread",
-    "transform-decorators-legacy",
-    "transform-class-properties"
+    "@babel/plugin-proposal-object-rest-spread",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-class-properties"
   ],
   "retainLines": true
 }

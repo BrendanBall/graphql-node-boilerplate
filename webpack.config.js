@@ -10,6 +10,7 @@ module.exports = {
     filename: '[name].js'
   },
   target: 'node',
+  mode: 'development',
   externals: [nodeExternals()],
   devtool: 'inline-source-map',
   module: {
